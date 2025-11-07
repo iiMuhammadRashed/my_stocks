@@ -11,9 +11,6 @@
 - [Setup & Installation](#setup--installation)
 - [API Documentation](#api-documentation)
 - [Project Structure](#project-structure)
-- [Testing](#testing)
-- [Known Issues & Limitations](#known-issues--limitations)
-- [Future Enhancements](#future-enhancements)
 
 ---
 
@@ -21,7 +18,7 @@
 
 **MyStocks** is a Flutter-based stock tracking application developed as part of a technical assessment. The app allows users to search for stocks, track their favorites, view detailed stock information with interactive charts, and set up price alerts with background notifications.
 
-**Note:** This project was modified from the original requirements - instead of Yahoo Finance API, I integrated **Twelve Data API** for more reliable data access and better documentation.
+**Note:** This project was modified from the original requirements - instead of Yahoo Finance API(Not Working), I integrated **Twelve Data API** for more reliable data access and better documentation.
 
 ---
 
@@ -69,11 +66,13 @@
 
 ## 🖼️ Screenshots
 
-> *Note: Add screenshots of your app here*
-
-```
-[Home Screen]  [Search Screen]  [Details Screen]  [Alerts Screen]
-```
+<p align="center">
+  <img src="screenshots/home_screen.png" width="200" alt="Home Screen"/>
+  <img src="screenshots/search_screen.png" width="200" alt="Search Screen"/>
+  <img src="screenshots/details_screen.png" width="200" alt="Stock Details"/>
+  <img src="screenshots/alerts_screen.png" width="200" alt="Price Alerts"/>
+  <img src="screenshots/alerts_notification.png" width="200" alt="Alert Notification"/>
+</p>
 
 ---
 
@@ -157,12 +156,6 @@ lib/
 ---
 
 ## 🚀 Setup & Installation
-
-### Prerequisites
-- Flutter SDK (3.4.3 or higher)
-- Dart SDK (included with Flutter)
-- Android Studio / VS Code
-- Android SDK / Xcode (for mobile development)
 
 ### Step 1: Clone the Repository
 ```bash
@@ -503,35 +496,6 @@ my_stocks/
 
 ---
 
-## 🧪 Testing
-
-### Run Tests
-```bash
-flutter test
-```
-
-### Test Coverage
-```bash
-flutter test --coverage
-```
-
-### Manual Testing Checklist
-
-- [ ] Search for stocks by symbol (AAPL, GOOGL, TSLA)
-- [ ] Add stocks to favorites
-- [ ] View stock details with chart
-- [ ] Create price alerts
-- [ ] Receive notifications when alert triggers
-- [ ] Delete alerts
-- [ ] Remove stocks from favorites
-- [ ] Test pull-to-refresh
-- [ ] Test dark/light mode toggle
-- [ ] Test with no internet connection
-- [ ] Test background task execution
-- [ ] Test app restart (data persistence)
-
----
-
 ## ⚠️ Known Issues & Limitations
 
 ### API Limitations
@@ -555,31 +519,6 @@ flutter test --coverage
 - **Data Points**: Limited to last 30 days for free tier
 - **Real-time**: Chart updates on refresh, not truly real-time
 - **Customization**: Basic chart with minimal interaction
-
----
-
-## 🚀 Future Enhancements
-
-### High Priority
-- [ ] Implement Firebase Cloud Messaging for true push notifications
-- [ ] Add Firebase Cloud Functions for server-side price monitoring
-- [ ] Implement user authentication
-- [ ] Add portfolio tracking with buy/sell transactions
-- [ ] Support for multiple watchlists
-
-### Medium Priority
-- [ ] Add more chart intervals (1h, 1week, 1month)
-- [ ] Implement stock comparison feature
-- [ ] Add news feed for stocks
-- [ ] Support for cryptocurrency tracking
-- [ ] Implement advanced filters and sorting
-
-### Nice to Have
-- [ ] Social features (share watchlists)
-- [ ] Stock screener
-- [ ] Technical indicators on charts
-- [ ] Export data to CSV
-- [ ] Widgets for home screen
 
 ---
 
@@ -626,35 +565,3 @@ This project was developed based on the following assessment criteria:
    - Impact: Works for assessment purposes
 
 ---
-
-## 📄 License
-
-This project is developed for educational and assessment purposes.
-
----
-
-## 🙏 Acknowledgments
-
-- **Twelve Data**: For providing excellent stock market API
-- **Flutter Team**: For the amazing framework
-- **Open Source Community**: For the incredible packages used in this project
-
----
-
-## 📞 Support
-
-For questions or issues:
-1. Check the [Known Issues](#known-issues--limitations) section
-2. Review API documentation at https://twelvedata.com/docs
-3. Open an issue on [GitHub](https://github.com/iiMuhammadRashed/my_stocks/issues)
-4. Contact: shadynaser711@gmail.com
-
----
-
-**Last Updated**: November 7, 2025  
-**Version**: 1.0.0  
-**Flutter Version**: 3.4.3+  
-
----
-
-*Built with ❤️ using Flutter*
